@@ -12,7 +12,6 @@
 }
 
 body {
-  overflow: hidden;
   font-family: "Inter", sans-serif;
   text-align: center;
   background-color: var(--very-dark-blue);
@@ -26,7 +25,6 @@ body,
 main {
   display: grid;
   place-items: center;
-  height: 100vh;
   padding: 2em 0.5em;
 }
 
@@ -86,6 +84,10 @@ main {
   body {
     overflow: hidden;
     text-align: justify;
+  }
+
+  main {
+    height: 100vh;
   }
 
   .card {
