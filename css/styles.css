@@ -25,7 +25,9 @@ body,
 main {
   display: grid;
   place-items: center;
-  padding: 2em 0.5em;
+  padding: 2em 0.5em 46em 0.5em;
+  position: relative;
+  height: 100vh;
 }
 
 .card {
@@ -80,6 +82,18 @@ main {
   color: var(--slightly-white-headings);
 }
 
+.attribution {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 1em;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution__link {
+  color: hsl(228, 45%, 44%);
+}
+
 @media screen and (min-width: 1024px) {
   body {
     overflow: hidden;
@@ -87,7 +101,7 @@ main {
   }
 
   main {
-    height: 100vh;
+    padding-bottom: 2em;
   }
 
   .card {
